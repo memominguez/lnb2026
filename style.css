@@ -132,6 +132,7 @@ td {
 #segundoP,
 #tercerP {
   color: #df0101;
+  border-color: black;
 }
 
 #totalPremios,
