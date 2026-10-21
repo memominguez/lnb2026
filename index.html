@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simulación lotería nacional de El Salvador"
+    />
+    <meta
+      name="keywords"
+      content="Lotería, simulación, juego, juegue, suerte, El Salvador"
+    />
+    <title>Simulación LNB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="clover1.png" />
+  </head>
+  <body class="home-page">
+    <header>
+      <h2>Bienvenido... viva la experiencia de jugar la LNB de El Salvador</h2>
+    </header>
+    <nav>
+      <a href="index.html" class="active">JUEGO</a>
+      <a href="aclaracion.html">Aclaración</a>
+      <a href="instrucciones.html">Instrucciones</a>
+      <a href="autor.html">Autor</a>
+    </nav>
+    <main>
+      <section class="left">
+        <h2 class="title2">Compre serie de billetes</h2>
+        <button class="play-button" onclick="comprarBilletes()">Comprar</button>
+
+        <table>
+          <tr>
+            <th id="fila1text">No. billete</th>
+            <th id="fila2text">Premio $</th>
+          </tr>
+          <tr>
+            <td id="billete1">-</td>
+            <td id="premiobillete1"></td>
+          </tr>
+          <tr>
+            <td id="billete2">-</td>
+            <td id="premiobillete2"></td>
+          </tr>
+          <tr>
+            <td id="billete3">-</td>
+            <td id="premiobillete3"></td>
+          </tr>
+          <tr>
+            <td id="billete4">-</td>
+            <td id="premiobillete4"></td>
+          </tr>
+          <tr>
+            <td id="billete5">-</td>
+            <td id="premiobillete5"></td>
+          </tr>
+          <tr>
+            <td id="billete6">-</td>
+            <td id="premiobillete6"></td>
+          </tr>
+          <tr>
+            <td id="billete7">-</td>
+            <td id="premiobillete7"></td>
+          </tr>
+          <tr>
+            <td id="billete8">-</td>
+            <td id="premiobillete8"></td>
+          </tr>
+          <tr>
+            <td id="billete9">-</td>
+            <td id="premiobillete9"></td>
+          </tr>
+          <tr>
+            <td id="billete10">-</td>
+            <td id="premiobillete10"></td>
+          </tr>
+          <tr>
+            <td id="totalPremios">Total $</td>
+            <td id="balanceCuenta"></td>
+          </tr>
+        </table>
+      </section>
+      <section class="right">
+        <h2 class="title2">Pruebe su suerte</h2>
+        <button class="play-button" onclick="correrSorteo()">
+          Correr sorteo
+        </button>
+
+        <figure>
+          <img src="tombola1.jpg" alt="tómbola" class="tombola" />
+        </figure>
+
+        <h2 class="title2">Premios principales</h2>
+        <table>
+          <tr>
+            <th>No. premiado</th>
+            <th>Premio $</th>
+          </tr>
+          <tr>
+            <td id="primerP">-</td>
+            <td>175,000.</td>
+          </tr>
+          <tr>
+            <td id="segundoP">-</td>
+            <td>20,000.</td>
+          </tr>
+          <tr>
+            <td id="tercerP">-</td>
+            <td id="tercerPtext">10,000.</td>
+          </tr>
+        </table>
+
+        <button class="play-button consult-button" onclick="myFunction()">
+          Ver lista de premios
+        </button>
+      </section>
+    </main>
+
+    <audio id="chicoAudio">
+      <source src="premchico.mp3" type="audio/mpeg" />
+      <!-- Your browser does not support the audio element -->
+    </audio>
+
+    <audio id="medioAudio">
+      <source src="premmedio.mp3" type="audio/mpeg" />
+      <!-- Your browser does not support the audio element.  -->
+    </audio>
+
+    <audio id="grandeAudio">
+      <source src="fanfarria.mp3" type="audio/mpeg" />
+      <!-- Your browser does not support the audio element.  -->
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

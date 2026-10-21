@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: rgb(85, 85, 182);
+  height: 4rem;
+  color: #cce7f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  height: 3rem;
+  background-color: #221f1f;
+  /* color: white; */
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+}
+
+nav a {
+  color: #cce7f0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background: blue;
+  color: cyan;
+}
+
+nav a.active {
+  color: cyan;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #22c1c3;
+  background-image: linear-gradient(to bottom, #22c1c3 0%, #941381 100%);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+/* From copilot, for avoiding scroll bar */
+/* .home-page main {
+  height: calc(100vh - 7rem);
+  min-height: 0;
+} */
+
+.left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+  padding-left: 18vw;
+}
+
+.right {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+  padding-right: 18vw;
+}
+
+.title2 {
+  color: #d9dad5;
+  margin-bottom: 10px;
+}
+.play-button {
+  font-size: 1.2rem;
+  padding: 10px 20px 10px 20px;
+  background: #dfdf9c;
+  /* background: yellow; */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.play-button:hover {
+  /* transform: translateY(5px); */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.play-button:active {
+  background: #f8f829;
+}
+
+.consult-button {
+  margin-top: 2rem;
+}
+
+table {
+  width: 70%;
+  border: 1px solid;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+th,
+td {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2px; 
+  border: 1px solid;
+  height: 2.2rem;
+  text-align: center;
+  background-color: #dfdf9c;
+}
+
+#primerP,
+#segundoP,
+#tercerP {
+  color: #df0101;
+}
+
+#totalPremios,
+#balanceCuenta {
+  font-weight: bold; 
+}
+
+figure {
+  margin-bottom: 3rem;
+}
+
+.tombola {
+  height: 75px;
+  width: 75px;
+}
+
+/* ************* ARTICLE ITEMS **************  */
+
+article {
+  background-color: #8ef8fa;
+  height: calc(100vh - 7rem);
+  padding-top: 2rem;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  font-size: 1.2rem;
+}
+
+.title-article {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+article ul li {
+  margin-bottom: 1rem;
+  /* font-size: 1.2rem; */
+}
+
+article ol li {
+  margin-bottom: 1rem;
+  /* font-size: 1.2rem; */
+}
+
+.the-author {
+  text-align: center;
+}
+
+/* ************ RESPONSIVE ****************** */
+
+@media (max-width: 1280px) {
+  .left {
+    padding-left: 10vw;
+  }
+  .right {
+    padding-right: 10vw;
+  }
+  article {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .left {
+    padding-left: 5vw;
+  }
+  .right {
+    padding-right: 5vw;
+  }
+  article {
+    padding-left: 18vw;
+    padding-right: 18vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    padding-left: 0;
+  }
+  .right {
+    padding-right: 0;
+  }
+  table {
+    width: 80%;
+  }
+  header h2 {
+    font-size: 1.2rem;
+  }
+  article {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  nav {
+    gap: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  nav a {
+    font-size: 0.9rem;
+  }
+  main {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  table {
+    width: 60%;
+  }
+  th,
+  td {
+    font-size: 1rem;
+    height: 2rem;
+  }
+  .play-button {
+    font-size: 1rem;
+  }
+  figure {
+    margin-bottom: 1rem;
+  }
+  .tombola {
+    height: 60px;
+    width: 60px;
+  }
+  article {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    min-height: fit-content;
+  }
+}
+
+@media (min-width: 640px) {
+  /* From copilot, for avoiding scroll bar */
+  .home-page main {
+    height: calc(100vh - 7rem);
+    min-height: 0;
+  }
+}
