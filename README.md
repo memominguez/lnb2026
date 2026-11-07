@@ -48,7 +48,7 @@ Cada número consta de un billete fragmentable en 20 pedacitos (vigésimos)
 
 Premios de urna -> 4 + 2 + 7 + 35 + 60 + 113 + 456 = 677
 
-Lista completa -> premios de urna + 4*3 + 9*3 + 90*3 
+Lista completa -> premios de urna + (4 * 3) + (9 * 3) + (90 * 3)
 
 Lista completa -> 677 + 12 + 27 + 270 = 986
 
